@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the date and time as a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<!-- <p id="demo1"></p> -->
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.toString();
+  var tz = d.getTimezoneOffset();
+  // var time = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = time;
+  // document.getElementById("demo1").innerHTML = time;
+}
+</script>
+
+</body>
+</html>

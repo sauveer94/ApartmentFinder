@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+Password: <input type="password" value="" id="myInput"><i></i><br><br>
+<input type="checkbox" id="btn"onclick="myFunction()">Show Password
+
+<script>
+function myFunction() {
+	
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>

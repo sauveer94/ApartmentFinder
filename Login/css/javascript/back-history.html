@@ -1,0 +1,26 @@
+<html> 
+<head> 
+<title>GeeksforGeeks back() example</title> 
+</head> 
+<body> 
+<b>Press the back button</b> 
+<input type="button" value="Back" onclick="previousPage()"> 
+
+<input type="button" value="Forward" onclick="NextPage()"> 
+
+<input type="button" value="go" onclick="NextPages()"> 
+<script> 
+function previousPage() { 
+	window.history.back(); 
+} 
+
+function NextPage() {
+    window.history.forward() 
+}
+
+function NextPages() {
+    window.history.go(2); 
+} 
+</script> 
+</body> 
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" name="txt1" id="txt1" placeholder="txt1" class="form-control">
+<p><input type="checkbox" name="checkbox" id="checkbox" class="checkbox">copy address</p>
+<input type="text" name="txt2" id="txt2" placeholder="txt2" class="form-control">
+
+<script type="text/javascript">
+	 $(".checkbox").change(function() {
+      if(this.checked) {
+          $('#txt2').val($('#txt1').val()).prop('disabled', true);
+      }
+      else {
+          $('#txt2').val('').prop('disabled', false);
+      }        
+    });
+</script>
+</body>
+</html>

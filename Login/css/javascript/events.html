@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- on blur -->
+
+<!-- <script>
+function myFun() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+
+  var y = document.getElementById("lname");
+  y.value = y.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text" id="fname" value="" onblur="myFun()">
+Enter your last name: <input type="text" id="lname" value="" onblur="myFun()"> -->
+
+
+
+<!-- on change -->
+
+<!-- <script>
+function myFun() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text" id="fname" onchange="myFun()"> -->
+
+
+<!-- <script>
+function preferedBrowser() {
+  var prefer = document.forms[0].browsers.value;
+  alert("You prefer browsing internet with " + prefer);
+}
+</script>
+</head>
+
+<body>
+
+<form>
+Choose which browser you prefer:
+  <select id="browsers" onchange="preferedBrowser()">
+    <option value="Chrome">Chrome</option>
+    <option value="Internet Explorer">Internet Explorer</option>
+    <option value="Firefox">Firefox</option>
+  </select>
+</form> -->
+
+<!-- on focus -->
+<!-- <script>
+function myFun(x) {
+  x.style.background = "yellow";
+}
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text" id="in" onfocus="myFun(this)"><br>
+Enter your name: <input type="text" id="in2" onfocus="myFun(this)"> -->
+
+
+<!-- onselect -->
+<!-- <script>
+function myFun() {
+  document.getElementById('demo').innerHTML = "You selected some text";
+}
+</script>
+</head>
+<body>
+<p id="demo"></p>
+Some text: <input type="text" value="Hello world!" onselect="myFun()" > -->
+
+
+<!-- onreset -->
+<!-- <script>
+function message() {
+  // confirm("This alert box was triggered by the onreset event handler");
+  alert("This alert box was triggered by the onreset event handler");
+}
+</script>
+</head>
+<body>
+
+<form onreset="message()">
+  Enter your name: <input type="text" size="20">
+  <input type="reset">
+</form> -->
+
+
+<!-- onkeydown -->
+<!-- <script>
+function myFunction() {
+  alert("You pressed a key inside the input field");
+  // var x = document.getElementById("fname");
+  // x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+
+<input type="text" id="fname" onkeydown="myFunction()"> -->
+
+<!-- onkeypress -->
+<!-- <script>
+function myFunction() {
+  alert("You pressed a key inside the input field");
+}
+</script>
+</head>
+<body>
+
+<p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" onkeypress="myFunction()"> -->
+
+
+<!-- onkeyup -->
+<!-- <script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+
+Enter your name: <input type="text" id="fname" onkeyup="myFunction()"> -->
+
+
+<!-- onkeydown and onkeyup both -->
+<!-- <script>
+function color(color) {
+  document.forms[0].myInput.style.background = color;
+}
+</script>
+</head>
+<body>
+
+<form>
+Write a message:<br>
+<input type="text" onkeydown="color('yellow')" onkeyup="color('red')" name="myInput">
+</form> -->
+
+<!-- onmouseover and onmouseout -->
+<!-- <h1 onmouseover="style.color='red'" onmouseout="style.color='green'">Mouse over this text</h1> -->
+
+<!-- onmousedown and onmouseup -->
+<!-- <script>
+function myFunction(elmnt, clr) {
+  elmnt.style.color = clr;
+}
+</script>
+</head>
+<body>
+
+<p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p> -->
+
+<!-- onmousemove and onmouseout -->
+<!-- <script>
+function myFunction(e) {
+  x = e.clientX;
+  y = e.clientY;
+  coor = "Coordinates: (" + x + "," + y + ")";
+  document.getElementById("demo").innerHTML = coor
+}
+
+function clearCoor() {
+  document.getElementById("demo").innerHTML = "";
+}
+</script>
+</head>
+<body style="margin:0px;">
+
+<div id="coordiv" style="width:299px;height:99px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+<p id="demo"></p> -->
+
+<!-- onload -->
+<!-- <script>
+function myFunction() {
+  alert("Page is loaded");
+}
+</script>
+</head>
+
+<body onload="myFunction()">
+<h2>Hello World!</h2>
+</body> -->
+
+<!-- onerror -->
+<!--   <script>
+function imgError() {
+  alert('The image could not be loaded.');
+}
+</script>
+</head>
+<body>
+
+<img src="image.gif" onerror="imgError()"> -->
+
+
+<!-- onresize -->
+<!-- <script>
+function myFunction() {
+  var w = window.outerWidth;
+  var h = window.outerHeight;
+  var txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</head>
+
+<body onresize="myFunction()">
+
+<p>Try to resize the browser window.</p>
+
+<p id="demo"> </p> -->
+</body>
+</html>

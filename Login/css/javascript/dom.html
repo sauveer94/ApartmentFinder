@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<!-- Finding HTML Elements by Tag Name -->
+<!-- <div id="main">
+<p>DOM first paragraph</p>
+<p>DOM second paragraph <b>getElementsByTagName</b> method.</p>
+</div>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("main");
+var y = x.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+</script> -->
+
+<!-- Finding HTML Elements by Class Name -->
+<!-- <p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementsByClassName("intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+</script> -->
+
+<!-- Finding HTML Elements by CSS Selectors -->
+<!-- <p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.querySelectorAll("p.intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro": ' + x[0].innerHTML;
+</script> -->
+
+
+<!-- Finding HTML Elements by HTML Object Collections -->
+<!-- <form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Vibhor"><br>
+  Last name: <input type="text" name="lname" value="Jain"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Click "Try it" to display the value of each element in the form.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.forms["frm1"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script> -->
+
+<!--Using document.anchors -->
+
+<!-- <a name="html">HTML Tutorial</a><br>
+<a name="css">CSS Tutorial</a><br>
+<a name="xml">XML Tutorial</a><br>
+
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"Number of anchors are: " + document.anchors.length;
+</script> -->
+
+<!--Using document.body -->
+<!-- <p id="demo"></p>
+<script>
+alert(document.body.innerHTML);
+</script> -->
+
+<!--Using document.documentElement -->
+<!-- <p id="demo"></p>
+<script>
+alert(document.documentElement.innerHTML);
+</script> -->
+
+<!-- count enbed -->
+<!-- <p id="demo"></p>
+<embed></embed>
+<embed></embed>
+<script>
+document.getElementById("demo").innerHTML =
+"Number of embeds: " + document.embeds.length;
+</script> -->
+
+<!-- count form -->
+<!-- <form action="">
+First name: <input type="text" name="fname" value="vibhor">
+<input type="submit" value="Submit">
+</form> 
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Number of forms: " + document.forms.length;
+</script> -->
+
+<!-- count images -->
+<!-- <p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Number of images: " + document.images.length;
+</script> -->
+
+
+<!-- DOM HTML -->
+<!-- <p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script> -->
+
+<!-- <img id="myImage" src="smiley.gif">
+
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script> -->
+
+<!-- DOM css -->
+<!-- <h1 id="id1">My Heading 1</h1>
+
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'red'">
+Click Me!</button> -->
+
+<!-- DOM Animation -->
+<!-- <style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script> -->
+
+
+<!-- DOM Events -->
+<!-- <h1 onclick="this.innerHTML='Ooops!'">Click on this text!</h1> -->
+
+
+<!-- addEventListener -->
+<!-- <button id="myBtn">Try it</button>
+<p id="demo"></p>
+<script>
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script> -->
+</body>
+</html>

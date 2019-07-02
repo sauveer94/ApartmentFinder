@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<!-- <script>
+var str = "Visit Techavera!"; 
+var n = str.search("Techavera");
+document.getElementById("demo").innerHTML = n;
+</script> -->
+
+<!-- <p id="demo"></p>
+<script>
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("cate");
+document.getElementById("demo").innerHTML = pos;
+</script> -->
+
+
+<!-- Search by regexm -->
+<!-- <p id="demo"></p>
+<script>
+var str = "Visit Techavera!"; 
+var n = str.search(/techavera/i);
+document.getElementById("demo").innerHTML = n;
+</script> -->
+
+<!-- Modifiers -->
+<!-- Working with i (Perform case-insensitive matching) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "Visit Techavera";
+  var patt1 = /techavera/i;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+<!-- Working with g (Perform a global match (find all matches rather than stopping after the first match)) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "Is this all there is is is?";
+  var patt1 = /Is/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+<!-- Working with m (Perform multiline matching) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "\nIs th\nis it \nis?";
+  var patt1 = /^is/m;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+<!-- Brackets -->
+<!-- Working with [abc] (Find any of the characters between the brackets)  -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "Is this all there is HH?";
+  var patt1 = /[a-z]/g; 
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+<!-- Working with [0-9] (Find any of the digits between the brackets) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "123456789";
+  var patt1 = /[0-9]/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+<!-- Working with (x|y) (Find any of the alternatives separated with |) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "re, green, red, green, gren, gr, blue, yellow";
+  var patt1 = /(blue|red|green)/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+<!-- Metacharacters -->
+<!-- Working with \d (Find a digit) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>  
+function myFunction() {
+  var str = "Give 100%, 500%, 400%!"; 
+  var patt1 = /\d/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+<!-- Working with \s (Find a whitespace character) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "Is this all there is?";
+  var patt1 = /\s/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+
+<!-- Working with \b (Find a match at the beginning or at the end of a word) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "Visit Techavera ithjjvh Techavera rajgjg"; 
+  var patt1 = /\bTe/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+<!-- Working with \uxxxx (Find the Unicode character specified by the hexadecimal number xxxx) -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var str = "Visit w3Schools. Hello world!"; 
+  var patt1 = /\u0077/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script> -->
+
+
+</body>
+</html>
+

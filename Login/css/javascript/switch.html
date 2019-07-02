@@ -1,0 +1,49 @@
+<html>
+    <head>
+      <title>Using the switch statement</title>
+    <script language="JavaScript">
+    function verifyDay(form){
+      var myEntry = form.day.value.toUpperCase();
+
+      var firstPart = "You have entered a day at the first of the week";
+
+      var endPart = "You have entered a day at the end of the week";
+
+      var weekEnd = "You have entered a weekend day";
+
+      switch(myEntry){
+        case "MONDAY" :
+          alert(firstPart);
+          break;
+        case "TUESDAY" :
+          alert(firstPart);
+          break;
+        case "WEDNESDAY" :
+          alert('You have entered a "hump" day');
+          break;
+        case "THURSDAY" :
+          alert(endPart);
+          break;
+        case "FRIDAY" :
+          alert(endPart);
+          break;
+        case "SATURDAY" :
+          alert(weekEnd);
+           break;
+        case "SUNDAY" :
+          alert(weekEnd);
+          break;
+        default :
+          alert('You have entered an invalid day');
+      }
+    }
+    </script>
+    </head>
+    <body>
+    <form name="myForm">
+    <b>Please enter a day of the week:</b><br>
+      <input type=TEXT value="" name="day">
+      <input type=BUTTON value="Verify" name="myButton" onClick='verifyDay(this.form)'>
+    </form>
+    </body>
+    </html>

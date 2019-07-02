@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var n=1;
+function addCookie(){
+document.cookie=n+"="+n;n++;
+}
+
+function ListCookies(){
+var result = document.cookie;
+document.getElementById("p").innerHTML=result;
+}
+
+function removeCookies(){
+//document.cookie="";
+var result = document.cookie;
+var cookieArray = result.split(";");
+for(var i=0;i<cookieArray.length;i++){
+   var keyValArr = cookieArray[i].split("=");
+   document.cookie=keyValArr[0]+"=; expires=Thu, 20 feb 2019 11:11:11 UTC";
+}
+}
+
+</script>
+
+</head>
+<body>
+<button onclick='addCookie()'>ADD COOKIE</button><br>
+<button onclick='ListCookies()'>LIST COOKIES</button>
+<button onclick='removeCookies()'>REMOVE COOKIES</button>
+<h1>RESULT:</h1>
+<p id="p"></p>
+</body>
+</html>

@@ -1,0 +1,166 @@
+.container-fluid{
+	background-color: #e2dad9;
+}
+
+.row .left-section .menu-section .menu {
+	padding-left: 10px;
+	padding-right:10px;
+	
+}
+.row .left-section .menu-section .menu li{
+	list-style: none;
+	border-bottom:3px solid lightgrey;
+	
+	padding: 10px 10px 10px 30px;
+
+}
+/*.row .left-section .login-section .login-form label{
+	
+}*/
+.row .left-section .login-section {
+	background-color: white;
+	border-radius: 10px;
+	padding: 0px;
+}
+.row .left-section .login-section .login-form{
+	padding:10px;	
+
+}
+.row .left-section .login-section h4{
+	background-color: grey;
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.row .left-section .login-section .login-form input{
+	display:block;
+	border-radius: 5px;
+	width:100%;
+}
+.row .left-section .login-section .login-form button{
+ 	margin-top: 15px;
+ 	margin-bottom: 5px;
+}
+
+.row .left-section .latest-update {
+	background-color:white;
+	margin-top: 10px;
+	border-radius:10px;
+	padding:0px;
+
+	
+}
+.row .left-section .latest-update h4{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color:grey;
+	padding:10px 0px 10px 25px;
+	
+}
+.row .left-section .latest-update .update-first h6{
+	color:blue;
+	font-weight: 900;
+	margin:0px;
+	padding:10px 10px 10px 10px;
+	
+}
+/*.row .left-section .latest-update .update-first p{
+
+}*/
+.row .left-section .latest-update .update-first p{
+	color:#429f42;
+	font-family: sans-serif; 
+	font-weight: 900;
+	margin:0px;
+	border-bottom: 2px solid lightgrey;
+
+	padding-bottom: 10px;
+	padding: 10px 10px 25px 10px;
+}
+.row .left-section .latest-update .update-second {
+	margin-top:10px;
+	border-bottom: 1px solid lightgrey;
+	
+
+}
+.row .left-section .latest-update .update-second h6{
+	color:blue;
+	font-weight: 900;
+	margin:0px;
+	padding:5px 10px 10px 10px;
+	
+}
+.row .left-section .latest-update .update-second p{
+	color:#429f42;
+	font-family: sans-serif; 
+	font-weight: 900;
+	margin:0px;
+	border-bottom: 2px solid lightgrey;
+
+	padding-bottom: 10px;
+	padding: 10px 10px 25px 10px;
+}
+.row .left-section .latest-update .view {
+	color:blue;
+	margin:0px;
+	padding:10px 10px 30px 10px;
+}
+.row .left-section{
+
+	border-left:2px solid grey;
+
+}
+.hello{
+	padding-bottom: 30px;
+
+}
+.right-section .heading{
+ 	text-align: left;
+ 	padding-left: 10px;
+ 	padding-bottom: 15px;
+}
+.row .right-section .right-img-first {
+	padding-right: 0px;
+}
+.row .right-section .right-img-first img{
+	margin-bottom:5%;
+	margin-left: 5%;
+	padding-right: 0px;
+	height: 80%;
+	width: 300px;
+	border:5px solid green;
+}
+.row .right-section .right-content-first {
+	padding-left:!important 0px ;
+	margin-left: !important 0px;
+	margin-top: 0px;
+	
+}
+.row .right-section .right-img-two img{
+	margin-bottom:10%;
+	margin-left: 5%;
+	padding-right: 0px;
+	height: 150px;
+	width: 300px;
+	border:5px solid green;
+	
+	}
+
+
+.row .right-section-2 {
+	border-bottom: 2px solid lightgrey;
+
+}
+.row .right-section-2 img{
+	margin-left: 10px;
+}
+.row .right-section-2 span{
+	margin-top: 25px; margin-left: 10px;
+	display: inline-block;
+
+}
+.row .right-section-2 p{
+padding: 0 15px 10px 20px; 
+text-align: justify;
+}

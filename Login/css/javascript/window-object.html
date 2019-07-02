@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- objects -->
+<!-- <script>
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("", "myWindow", "width=400, height=200");
+}
+
+function closeWin() {
+  if (myWindow) {
+    myWindow.close();
+  }
+}
+
+function checkWin() {
+  if (!myWindow) {
+    document.getElementById("msg").innerHTML = "'myWindow' has never been opened!";
+  } else {
+    if (myWindow.closed) { 
+      document.getElementById("msg").innerHTML = "'myWindow' has been closed!";
+    } else {
+      document.getElementById("msg").innerHTML = "'myWindow' has not been closed!";
+    }
+  }
+}
+</script>
+</head>
+<body>
+
+<button onclick="openWin()">Open "myWindow"</button>
+<button onclick="closeWin()">Close "myWindow"</button>
+<br><br>
+<button onclick="checkWin()">Has "myWindow" been closed?</button>
+<br><br>
+<div id="msg"></div> -->
+
+<!-- History, innerWidth, innerHeight -->
+
+<!-- Return ifream length -->
+<!-- <iframe src="https://www.cnn.com"></iframe>
+<iframe src="https://www.bbc.com"></iframe>
+<iframe src="https://www.nytimes.com"></iframe>
+<iframe src="https://www.nytimes.com"></iframe>
+
+<p>Click the button to get the number of frames found on this page.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = window.length;
+  document.getElementById("demo").innerHTML = x;
+}
+</script> -->
+
+<!-- Save data in local storage without time limit -->
+<!-- <div id="result"></div>
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script> -->
+
+
+<!-- Methods -->
+
+<!-- alert -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}
+</script> -->
+
+<!-- open and close window -->
+<!-- <button onclick="openWin()">Open "myWindow"</button>
+<button onclick="closeWin()">Close "myWindow"</button>
+
+<script>
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("", "myWindow", "width=200,height=100");
+  myWindow.document.write("<p>This is 'myWindow'</p>");
+}
+
+function closeWin() {
+  myWindow.close();
+}
+</script> -->
+
+<!-- redirect to new window -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  window.open("https://www.w3schools.com");
+}
+</script> -->
+
+<!-- open with _self -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var myWindow = window.open("", "_self");
+  myWindow.document.write("<p>I replaced the current window.</p>");
+}
+</script> -->
+
+
+<!-- print current page -->
+<!-- <button onclick="myFunction()">Print this page</button>
+
+<script>
+function myFunction() {
+  window.print();
+}
+</script> -->
+
+<!-- prompt -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+</script> -->
+
+
+<!-- break statment -->
+<!-- <p id="demo"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+  if (i == 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script> -->
+
+<!-- continue statment -->
+<!-- <p id="demo"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+  if (i == 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script> -->
+</body>
+</html>

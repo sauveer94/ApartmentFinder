@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p id="demo"></p>
+<button id="btn">Click</button>
+
+<!-- <script type="text/javascript">
+	document.getElementById('btn').addEventListener("click", test);
+
+	function test(){
+		document.getElementById('demo').innerHTML = Date();
+	}
+</script> -->
+
+<script type="text/javascript">
+	var x = document.getElementById('btn');
+	x = addEventListener("click", test);
+	x = addEventListener("click", test2);
+
+	function test(){
+		alert('hello');
+	}
+	function test2(){
+		alert('Second hello');
+	}
+</script>
+
+</body>
+</html>

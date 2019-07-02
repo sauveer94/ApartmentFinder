@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+
+<!-- <script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+document.getElementById("demo").innerHTML = typeof cars + '<br>' + cars;
+</script> -->
+
+
+<!-- <script>
+var cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+document.getElementById("demo").innerHTML = cars;
+</script> -->
+
+<!-- get one element -->
+<!-- <script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars[0];
+</script> -->
+
+
+<!-- change value -->
+<!-- <script>
+var cars = ["Saab", "Volvo", "BMW"];
+// document.getElementById("demo").innerHTML = cars;
+cars[1] = "Opel";
+document.getElementById("demo").innerHTML = cars;
+</script> -->
+
+
+<!-- array as objbect -->
+<!-- <script>
+var person = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("demo").innerHTML = person["firstName"] + person["age"];
+</script> -->
+
+<!-- Adding new properties -->
+<!-- <script>
+var person = {
+  firstname:"John",
+  lastname:"Doe",
+  age:50,
+  eyecolor:"blue"
+};
+
+person.nationality = "English";
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.nationality + ".";
+</script> -->
+
+<!-- Deleting properties -->
+<!-- <script>
+var person = {
+  firstname:"John",
+  lastname:"Doe",
+  age:50,
+  eyecolor:"blue"
+};
+
+delete person.age;
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.age + " years old.";
+</script> -->
+
+<!-- object with loop -->
+<!-- <script>
+var txt = "";
+var person = {fname:"John", lname:"Doe", age:25}; 
+var x;
+for (x in person) {
+  txt += person[x] + " ";
+}
+document.getElementById("demo").innerHTML = txt;
+</script> -->
+
+<!-- Object Constructors -->
+<!-- <script>
+
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.name = function() {
+    return this.firstName + " " + this.lastName
+  };
+}
+
+// Create a Person object
+var myFather = new Person("John", "Doe", 50, "blue");
+
+// Display full name
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.name(); 
+
+</script> -->
+
+<!-- length -->
+<!-- <script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.length;
+</script> -->
+
+<!-- access last array -->
+<!-- <script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var last = fruits[fruits.length-1];
+document.getElementById("demo").innerHTML = last;
+</script> -->
+
+<!-- array in loop -->
+<!-- <script>
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+</script> -->
+
+
+<!-- add element on last -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits[fruits.length] = "Lemon";
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script> -->
+
+<!-- array string -->
+<!-- <script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = typeof fruits;
+
+var tr = fruits.toString();
+document.getElementById("demo").innerHTML = typeof tr + "<br>" + tr;
+</script> -->
+
+<!-- join -->
+<!-- <script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+</script> -->
+
+<!-- pop -->
+<!-- <p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+</script> -->
+
+
+<!-- push -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.push("Kiwi");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script> -->
+
+<!-- shift -->
+<!-- <p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits.length + '<br>' + fruits;
+fruits.shift();
+document.getElementById("demo2").innerHTML = fruits.length + '<br>' + fruits + '<br>' + fruits[3];
+</script> -->
+
+<!-- unshift -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.unshift("Lemon");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script> -->
+
+<!-- delete -->
+<!-- <p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo1").innerHTML =
+  "The first fruit is: " + fruits[0];
+
+  delete fruits[0];
+
+  document.getElementById("demo").innerHTML = fruits.length;
+  document.getElementById("demo2").innerHTML =
+  "The first fruit is: " + fruits[0];
+</script> -->
+
+
+<!-- splice -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = "Original Array:<br>" + fruits;
+
+function myFunction() {
+  fruits.splice(2,0, "Lemon", "Kiwi");
+  document.getElementById("demo2").innerHTML = "New Array:<br>" + fruits;
+}
+</script> -->
+
+
+<!-- <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.splice(0,1);
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script> -->
+
+<!-- concat -->
+<!-- <script>
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias", "Linus"];
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var myChildren = myGirls.concat(myBoys, fruits);
+
+document.getElementById("demo").innerHTML = myChildren;
+</script> -->
+
+<!-- slice -->
+<!-- work with length -->
+<!-- <script>
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+</script> -->
+
+
+<!-- <script>
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango","hello"];
+var citrus = fruits.slice(2,4);
+document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+</script> -->
+
+<!-- sorting array -->
+<!-- <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+// var fruits = ["Banana", "Orange", "Apple", "Mango","Aabb"];
+var fruits = [3,1,44,22,66,43];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.sort();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script> -->
+
+
+<!-- reverse -->
+<!-- <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+// Create and display an array:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  // First sort the array
+  fruits.sort();
+  // Then reverse it:
+  fruits.reverse();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script> -->
+
+
+
+<!-- Math.max.apply -->
+<!-- <script>
+var points = [40, 100,300, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMax(points);
+
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+</script> -->
+
+
+<!-- Math.min.apply -->
+<!-- <script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMin(points);
+
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+}
+</script> -->
+
+</body>
+</html>
+
